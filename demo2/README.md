@@ -50,6 +50,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends vim=2:8.2.3995-
     && rm -rf /var/lib/apt/lists/*
 ```
 
+lub gdy nie zgadzamy się z polityką DL3008
+```
+# hadolint ignore=DL3008
+RUN apt-get update && apt-get install -y --no-install-recommends vim \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+```
+
 ### DL4006
 
 [wiki](https://github.com/hadolint/hadolint/wiki/DL4006)
