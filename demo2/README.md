@@ -63,3 +63,9 @@ Poprawka
 #dodać linię po FROM
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 ```
+
+## A czy teraz się buduje?
+
+```
+docker build .
+```
