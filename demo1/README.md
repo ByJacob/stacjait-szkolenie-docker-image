@@ -1,15 +1,12 @@
 # Demo 1
 
-## Pierwszy obraz
+Komendy wykonujemy w folderze `demo1`
 
-Komendy wykonujemy w folderze `demo1/image1`
-```
-cd image1
-```
+## Pierwszy obraz
 
 ### Budujemy pierwszy obraz
 ```
-docker build -f Dockerfile -t demo1-1 .
+docker build -f Dockerfile1 -t demo1-1 .
 ```
 
 ### Weryfikacja warstw zbudowanego obrazu
@@ -24,11 +21,9 @@ docker image ls | grep demo1-1
 
 ## Drugi obraz
 
-Komendy wykonujemy w folderze `demo1/image2` 
-
 ### Budujemy pierwszy obraz
 ```
-docker build -f Dockerfile -t demo1-2 .
+docker build -f Dockerfile2 -t demo1-2 .
 ```
 
 ### Weryfikacja warstw zbudowanego obrazu
