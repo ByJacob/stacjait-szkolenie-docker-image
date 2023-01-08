@@ -1,4 +1,4 @@
-# Demo 2
+# Demo 3
 
 Komendy wykonujemy w folderze `demo3`
 
