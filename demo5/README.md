@@ -56,7 +56,7 @@ font-family: Arial, Helvetica, sans-serif;
 </html>
 DELIM
 ```
-5. Niestety serwis typu `oneshot` nie obsługuje bezpośrednio zawartości pliku `run`. Konfigurację definuje się w pliku `up`. Niestety plik ten domyślnie ma powłokę `execline`, jednak nic nie stoi na przeszkodzie wywołanie skryptu /bin/sh przy pomocy tej powłoki.
+5. Niestety serwis typu `oneshot` nie obsługuje bezpośrednio zawartości pliku `run`. Konfigurację definuje się w pliku `up`. Dodatkowo plik ten domyślnie ma zdefiniowaną powłokę `execline`, jednak nic nie stoi na przeszkodzie aby wywyłać skrypt /bin/sh przy pomocy tej powłoki.
 ```bash
 /etc/s6-overlay/s6-rc.d/mypage/run
 ```
