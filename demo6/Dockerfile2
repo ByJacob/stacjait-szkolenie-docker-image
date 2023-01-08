@@ -1,0 +1,14 @@
+FROM python:3.10-bullseye
+
+WORKDIR /app
+
+RUN curl -o rzadko_zmieniany_plik.bin https://sabnzbd.org/tests/internetspeed/50MB.bin
+
+RUN apt-get update
+RUN apt-get install -y curl vim procps
+RUN apt-get clean
+RUN rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip3 install -r requirements.txt
+COPY . .

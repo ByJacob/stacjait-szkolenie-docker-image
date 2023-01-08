@@ -1,0 +1,19 @@
+FROM python:3.10-alpine as base
+
+WORKDIR /app
+
+RUN apk add --no-cache curl vim procps
+
+RUN curl -o rzadko_zmieniany_plik.bin https://sabnzbd.org/tests/internetspeed/50MB.bin
+
+FROM base as build
+
+COPY super_tajny_sekret.txt .
+COPY requirements.txt .
+RUN pip3 install -r requirements.txt
+COPY . .
+RUN rm -rf super_tajny_sekret.txt
+
+FROM base as prod
+COPY --from=build /usr/local /usr/local
+COPY --from=build /app /app

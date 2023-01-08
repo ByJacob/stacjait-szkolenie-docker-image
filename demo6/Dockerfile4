@@ -1,0 +1,21 @@
+FROM python:3.10-slim-bullseye
+
+WORKDIR /app
+
+RUN set -ex; \
+    \
+    apt-get update; \
+    apt-get install -y --no-install-recommends \
+      curl \
+      vim \
+      procps; \
+    apt-get clean; \
+    \
+    rm -rf /var/lib/apt/lists/*
+
+RUN curl -o rzadko_zmieniany_plik.bin https://sabnzbd.org/tests/internetspeed/50MB.bin
+
+COPY super_tajny_sekret.txt .
+COPY requirements.txt .
+RUN pip3 install -r requirements.txt
+COPY . .
