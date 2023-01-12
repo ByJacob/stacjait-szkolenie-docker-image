@@ -2,6 +2,8 @@
 
 Demo bazuje na aplikacji [helloflask/flask-examples](https://github.com/helloflask/flask-examples) i [daluisgarcia/flask-modular-arquitecture](https://github.com/daluisgarcia/flask-modular-arquitecture).
 
+Komendy wykonujemy w folderze `demo6`
+
 ## Budowanie obrazu
 
 1. Sprawdźmy jak wyglądają warstwy pliku dockerfile bez zmian `Dockerfile1`

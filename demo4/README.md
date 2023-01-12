@@ -200,3 +200,9 @@ For more free scans that keep your images secure, sign up to Snyk at https://doc
 | CVE-2022-42898 |                    |
 | CVE-2022-4415  |                    |
 | CVE-2022-45873 |                    |
+
+## Wyłączamy aplikację clair
+
+```
+docker-compose down -v
+```
