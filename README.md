@@ -1,4 +1,15 @@
-# Spis treści
+# Jak skutecznie zaprojektować i wytworzyć dobry obraz dockerowy
+
+1. Klonujemy to repozytorium do folderu
+```
+git clone https://github.com/ByJacob/stacjait-szkolenie-docker-image.git
+```
+
+2. Otwieramy sklonowany folder w naszym ulubionym IDE
+
+3. Słuchamy co ma nam prowadzocy do przekazania
+
+## Spis treści
 [Demo 1](demo1/README.md)
 [Demo 2](demo2/README.md)
 [Demo 3](demo3/README.md)

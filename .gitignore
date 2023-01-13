@@ -4,3 +4,4 @@ demo5/s6-rc.d/mypage/
 demo6/*_secrets
 demo6/.dockerignore
 */demo8_img.tar
+.vscode/
