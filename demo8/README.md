@@ -46,8 +46,6 @@ docker history demo6:7 | head
 docker history demo8:img | head
 docker history localhost:5000/demo8:kaniko | head
 
-docker run --rm demo8:img ls -all /usr/local/bin/
-
 docker images demo6:7
 docker images demo8:img
 docker images localhost:5000/demo8:kaniko
