@@ -32,7 +32,7 @@ docker load --input demo8_img.tar
 docker run \
     -v $(pwd)/../demo6:/workspace \
     --network host \
-    gcr.io/kaniko-project/executor:latest \
+    gcr.io/kaniko-project/executor:v1.9.2 \
     --dockerfile /workspace/Dockerfile7 \
     --destination "localhost:5000/demo8:kaniko" \
     --context dir:///workspace/

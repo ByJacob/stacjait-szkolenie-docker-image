@@ -12,6 +12,7 @@ Komendy:
 ```
 git clone https://github.com/quay/clair.git
 cd clair
+git checkout v4.6.0
 docker-compose up -d
 ```
 
