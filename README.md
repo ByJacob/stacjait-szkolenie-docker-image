@@ -12,7 +12,7 @@ docker pull alpine:3
 docker pull ubuntu:22.10
 docker pull ubuntu:jammy
 docker pull docker.io/library/postgres:12
-docker pull quay.io/projectquay/golang:1.18
+docker pull quay.io/projectquay/golang:1.17
 docker pull docker.io/library/traefik:v2.2
 docker pull python:3.10-bullseye
 docker pull python:3.10-slim-bullseye
