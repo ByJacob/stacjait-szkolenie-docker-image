@@ -60,8 +60,27 @@ DELIM
 ```bash
 /etc/s6-overlay/s6-rc.d/mypage/run
 ```
-6. Definiujemy główną zależność jako `base`
+6. Definiujemy główną zależność jako `base` w folderze `dependencies.d` w `mypage`.
 7. Dodajemy do serwisu `mynginx` zależność `mypage` w postaci pustego pliku
+8. Struktura plików po pracach powinna wyglądać następująco:
+```
+s6-rc.d
+├── mynginx
+│   ├── dependencies.d
+│   │   ├── base
+│   │   └── mypage
+│   ├── run
+│   └── type
+├── mypage
+│   ├── dependencies.d
+│   │   └── base
+│   ├── run
+│   ├── type
+│   └── up
+└── user
+    └── contents.d
+        └── mynginx
+```
 
 ### I kolejne testy
 
